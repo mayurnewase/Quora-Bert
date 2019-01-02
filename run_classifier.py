@@ -250,7 +250,7 @@ class QuoraProcessor(DataProcessor):
       if set_type == "test":
         label = "0"
       else:
-        label = target[i]
+        label = str(target[i])
       examples.append(
           InputExample(guid=guid, text_a=text_a, label=label))
     return examples
