@@ -250,7 +250,7 @@ class QuoraProcessor(DataProcessor):
       if set_type == "test":
         label = "0"
       else:
-        label = tokenization.convert_to_unicode(target[i])
+        label = target[i]
       examples.append(
           InputExample(guid=guid, text_a=text_a, label=label))
     return examples
