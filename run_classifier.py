@@ -230,7 +230,7 @@ class QuoraProcessor(DataProcessor):
 
     que = []
     tar = []
-    for i in len(data):
+    for i in range(len(data)):
       que.append(data.loc[i , "quesition_text"])
       tar.append(data.loc[i , "target"])
 
