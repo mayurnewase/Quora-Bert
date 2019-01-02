@@ -856,7 +856,7 @@ def main(_):
   #config for op_dir , checkpoint_steps,cluster
   is_per_host = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
   run_config = tf.contrib.tpu.RunConfig(
-      cluster=tpu_cluster_resolver,
+      cluster=None,
       master=FLAGS.master,
       model_dir=FLAGS.output_dir,
       save_checkpoints_steps=FLAGS.save_checkpoints_steps,
