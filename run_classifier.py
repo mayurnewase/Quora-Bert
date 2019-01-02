@@ -242,7 +242,7 @@ class QuoraProcessor(DataProcessor):
     returns list of InputExamples
     """
     examples = []
-    for (i, que) in len(question):
+    for i in range(len(question)):
       if i == 0:
         continue
       guid = "%s-%s" % (set_type, i)
